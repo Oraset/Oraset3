@@ -1,0 +1,28 @@
+# 编译输出
+*.exe
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# 临时文件
+*.tmp
+*.log
+oraset3_*.cpp
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+bin/
+obj/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~

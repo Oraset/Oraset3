@@ -1,0 +1,11 @@
+// 测试枚举
+enum Color {
+    RED,
+    GREEN,
+    BLUE = 10,
+    YELLOW
+};
+
+c := RED;
+println(c);
+println(BLUE);

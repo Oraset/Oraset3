@@ -1,0 +1,29 @@
+// fdan.orh - Oraset3 标准库头文件
+// 包含常用内置函数实现
+
+// 数学函数
+func abs(x int) int {
+    if x < 0 {
+        return -x
+    }
+    return x
+}
+
+func min(a int, b int) int {
+    if a < b {
+        return a
+    }
+    return b
+}
+
+func max(a int, b int) int {
+    if a > b {
+        return a
+    }
+    return b
+}
+
+// 字符串函数
+func concat(s1 string, s2 string) string {
+    return s1 + s2
+}

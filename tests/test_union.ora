@@ -1,0 +1,8 @@
+union Data {
+    i: int;
+    f: float;
+};
+
+var data Data;
+data.i = 42;
+println(data.i);

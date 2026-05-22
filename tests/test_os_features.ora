@@ -1,0 +1,81 @@
+// Oraset3 操作系统级编程特性测试
+println("=== Oraset3 操作系统级编程特性 ===");
+
+// 1. 位操作符测试
+println("");
+println("1. 位操作符测试:");
+
+a := 10;  // 0b1010
+b := 12;  // 0b1100
+
+println("a = 10 (0b1010)");
+println("b = 12 (0b1100)");
+println("a & b =");
+println(a & b);  // 位与: 0b1000 = 8
+println("a | b =");
+println(a | b);  // 位或: 0b1110 = 14
+println("a ^ b =");
+println(a ^ b);  // 位异或: 0b0110 = 6
+println("a << 1 =");
+println(a << 1); // 左移: 20
+println("a >> 1 =");
+println(a >> 1); // 右移: 5
+
+// 2. 枚举测试
+println("");
+println("2. 枚举测试:");
+
+enum Color {
+    RED,
+    GREEN,
+    BLUE = 10,
+    YELLOW
+};
+
+c := RED;
+println("Color.RED =");
+println(c);
+println("Color.BLUE =");
+println(BLUE);
+
+// 3. 联合体测试
+println("");
+println("3. 联合体测试:");
+
+union Data {
+    i: int;
+    f: float;
+    b: bool;
+};
+
+var data Data;
+data.i = 42;
+println("data.i =");
+println(data.i);
+
+// 4. 指针操作测试
+println("");
+println("4. 指针操作测试:");
+
+x := 100;
+ptr := &x;      // 取地址
+println("x =");
+println(x);
+println("*ptr =");
+println(*ptr);  // 解引用
+
+*ptr = 200;     // 通过指针修改值
+println("修改后 x =");
+println(x);
+
+// 5. 类型转换测试
+println("");
+println("5. 类型转换测试:");
+
+num := 3.14;
+intNum := (int)num;
+println("(int)3.14 =");
+println(intNum);
+
+println("");
+println("=== 操作系统级特性测试完成 ===");

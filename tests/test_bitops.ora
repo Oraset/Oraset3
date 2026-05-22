@@ -1,0 +1,8 @@
+// 测试位操作符
+a := 10;
+b := 12;
+println(a & b);
+println(a | b);
+println(a ^ b);
+println(a << 1);
+println(a >> 1);
